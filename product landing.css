@@ -5,57 +5,77 @@
 /*
     desgin for the header of the page
 */
-header {
-    display: flex;
-    position: sticky;
 
-    justify-content: space-between;
-    align-items: center;
-    background-color: darkorange;
-    align-items: stretch;
+header {
+  position: fixed;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 0%;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: space-between;
+  background-color: orange;
+  align-items: stretch;
 }
 
+.right-side-menu {
+  display: flex;
+}
 
-span {
-    justify-content: space-around;
-    font-size: 40px;
-    padding-bottom: 30vw;
+#Bike_Name {
+  justify-content: space-around;
+  padding-left: 20px;
+  font-size: 40px;
+}
+
+.empty-space {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
 }
 
 .header-img {
-    background-color: white;
-    padding-top: 20px;
+  background-color: white;
+  margin-top: 20px;
+  justify-self: center;
+  display: flex;
 }
 
-
-
+/*
 #nav-bar {
     background-color: pink;
     display: flex;
     justify-content: space-evenly;
 
 }
+*/
 
-nav li {
-    list-style: none;
-    justify-content: start;
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-basis: initial;
-
+nav li {
+  list-style: none;
+  align-items: stretch;
+  justify-content: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    justify-content: space-evenly;
+  color: white;
+  text-decoration: none;
+  justify-content: space-evenly;
 }
 
 nav a:hover {
-    color: red;
+  color: red;
 }
 
 /*
@@ -63,32 +83,44 @@ nav a:hover {
 */
 
 body {
-    background-color: orange;
-    font-family: 'Ropa Sans', sans-serif;
+  background-color: lightgoldenrodyellow;
+  font-family: "Ropa Sans", sans-serif;
+}
+.userEmailBox {
+  display: flex;
+  margin-top: 50px;
+  padding-left: 83%;
 }
 
 section {
-    display: flex;
-    background-color: green;
+  display: flex;
 }
-
+form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+form label {
+  padding-right: 5px;
+}
 .bikes img {
-    width: 500px;
-    height: 250px;
-    border: 10px;
-    border-style: solid;
-    border-color: black;
+  width: 500px;
+  height: 250px;
+  border: 10px;
+  border-style: solid;
+  border-color: black;
 }
 
 .bikes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*margin-left: 25%;
+  margin-right: 25%;*/
 }
 
 .BMX h2 {
-    font-size: 16px;
+  font-size: 16px;
 }
