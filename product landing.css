@@ -71,6 +71,7 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
+  font-size: 20px;
   justify-content: space-evenly;
 }
 
@@ -92,9 +93,6 @@ body {
   padding-left: 83%;
 }
 
-section {
-  display: flex;
-}
 form {
   display: flex;
   justify-content: space-between;
@@ -104,23 +102,27 @@ form {
 form label {
   padding-right: 5px;
 }
-.bikes img {
-  width: 500px;
-  height: 250px;
-  border: 10px;
-  border-style: solid;
-  border-color: black;
-}
-
 .bikes {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  /*margin-left: 25%;
-  margin-right: 25%;*/
+  justify-content: space-between;
 }
 
-.BMX h2 {
-  font-size: 16px;
+.bikes img {
+  width: 450px;
+  height: 200px;
+  border: 10px;
+  border-style: solid;
+  border-color: black;
+}
+.bikes button {
+  justify-content: center;
+}
+
+.pricing button {
+  background-color: orange;
+  color: white;
+  width: 20%;
+  font-size: 20px;
 }
